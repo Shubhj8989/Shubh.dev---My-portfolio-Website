@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  cursor: none; /* Hide default cursor globally */
+  
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  cursor: none !important; /* Force hide everywhere */
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  /* Light Mode Default */
+  background-color: #f4f4f5; 
+  color: #18181b;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark Mode Overrides */
+.dark body {
+  background-color: #09090b; /* zinc-950 */
+  color: #f4f4f5;
+}
+
+/* Selection Color */
+::selection {
+  background-color: #f97316; /* brand-accent */
+  color: #ffffff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d4d4d8; /* zinc-300 */
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background-color: #3f3f46; /* zinc-700 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a1a1aa; /* zinc-400 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background-color: #52525b; /* zinc-600 */
+}
