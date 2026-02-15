@@ -93,7 +93,7 @@ const Hero = ({ scrollToAbout }) => {
                     className="flex items-center gap-4 mt-10 relative z-10"
                 >
                     <a
-                        href="https://drive.google.com/file/d/1tBRMjpayduyNa0luJcMnMNbaA1VltDPq/view?usp=drivesdk"
+                        href="https://drive.google.com/file/d/13BIXGaWPG06weLNJ1RewcVskHqVBRvSU/view?usp=sharing"
                         target="_blank"
                         rel="noreferrer"
                         onMouseEnter={() => setCursorVariant("hover")}
